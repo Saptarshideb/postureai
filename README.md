@@ -1,4 +1,4 @@
-# PostureAI 🧍
+# PostureAI 
 
 ### Your posture called. It wants a better working environment.
 
@@ -63,9 +63,6 @@ PostureAI is designed to process video locally and persist structured posture me
 
 Contributions, bug reports, and ideas are welcome. If you're interested in computer vision, biomechanics, or building privacy-first AI applications, feel free to get involved.
 
-## 📄 License
-
-Open-source licensing will be specified in the repository's `LICENSE` file.
 
 ---
 
