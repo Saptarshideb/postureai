@@ -1,36 +1,74 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# PostureAI 🧍
 
-## Getting Started
+### Your posture called. It wants a better working environment.
 
-First, run the development server:
+**PostureAI** is an open-source, privacy-first posture monitoring system that uses computer vision to track body alignment in real time. It visualizes your skeletal landmarks, measures posture-related angles, and aims to help you understand how your posture changes throughout the day.
+
+No subscriptions. No cloud GPUs. No webcam footage uploaded to a server. Just computer vision, a little biomechanics, and hopefully fewer hours spent shaped like a question mark.
+
+## ✨ Features
+
+- **Real-time pose detection** — Track body landmarks using MediaPipe.
+- **Skeletal visualization** — See detected landmarks and connections directly over your webcam feed.
+- **Posture metrics** — Calculate neck-related angles, shoulder tilt, and other geometric measurements.
+- **Personal baselines** — Planned support for comparing your current posture with your own reference measurements.
+- **Local-first privacy** — Designed to process video on-device and store structured metrics locally.
+- **Open source** — Built to be accessible, extensible, and free to use.
+
+> **Development status:** Early development. Core pose detection and metric calculations exist in the prototype. Personal calibration, historical analytics, and advanced posture intelligence are still in development.
+
+## 🛠️ Tech Stack
+
+| Technology | Purpose |
+|---|---|
+| Next.js + TypeScript | Frontend application |
+| Tailwind CSS | User interface |
+| MediaPipe Pose | Real-time pose estimation |
+| HTML Canvas | Skeleton and measurement overlays |
+| Zustand | Application state |
+| IndexedDB / Dexie.js | Local data persistence |
+
+## 🚀 Getting Started
+
+**Prerequisites:** Node.js, npm, Git, and a webcam.
 
 ```bash
+git clone https://github.com/YOUR_USERNAME/postureai.git
+cd postureai
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open `http://localhost:3000` in your browser and grant camera access when prompted.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Replace `YOUR_USERNAME` with your GitHub username.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 🏗️ What's Next?
 
-## Learn More
+- [ ] Rebuild the prototype with a modular V2 architecture.
+- [ ] Improve measurement accuracy and landmark validation.
+- [ ] Implement personal posture calibration.
+- [ ] Add posture history and visual analytics.
+- [ ] Develop intelligent, configurable break reminders.
+- [ ] Investigate ML-based posture trend analysis.
+- [ ] Bundle runtime assets for fully offline operation.
 
-To learn more about Next.js, take a look at the following resources:
+## 🔒 Privacy First
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Your webcam feed should stay yours.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+PostureAI is designed to process video locally and persist structured posture measurements rather than raw footage. Full offline operation is a goal, and requires bundling model assets and verifying that the application works without a network connection.
 
-## Deploy on Vercel
+## 🤝 Contributing
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Contributions, bug reports, and ideas are welcome. If you're interested in computer vision, biomechanics, or building privacy-first AI applications, feel free to get involved.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## 📄 License
+
+Open-source licensing will be specified in the repository's `LICENSE` file.
+
+---
+
+**The goal:** Build a posture system that explains its measurements instead of throwing random numbers at you and calling it science.
+
+*Built in the open. Designed with privacy in mind. One less excuse to become a desk goblin.*
